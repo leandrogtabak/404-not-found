@@ -1,0 +1,141 @@
+/*Style reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    color:rgb(51, 51, 51);
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    height: 100vh;
+}
+
+
+h1 {
+    font-size: 3em;
+    padding-right: 1rem;
+    margin: 0.5em 0;
+}
+
+.header {
+    font-weight: bolder;
+    align-self: flex-start;
+    padding:20px;
+}
+
+.container-global {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    padding: 5vw;
+    width: 50vw;
+}
+
+
+
+.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.description p {
+    padding: 1vh 0;
+    width: 50%;
+}
+
+.back {
+    color: white;
+    font-size: 0.65rem;
+    background-color: rgb(51, 51, 51);
+    width: fit-content;
+    padding: 20px 35px;
+    border: none;
+    margin-top: 3.5em;
+
+}
+
+
+/* On screens that are 600px or less  -or 600px width maximum-*/
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 2.8em;
+        font-weight: bolder;
+        margin-left: 20px;
+        width: 329px;
+        padding-right: 0;
+        /* width: 340px; */
+    }
+
+
+
+    .description p {
+        font-size: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container img {
+
+        width: 85%;
+    }
+
+    .description {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .description p {
+        width: 80%;
+        margin: 0 20px;
+    }
+
+    .back {
+        margin: 50px 20px;
+    }
+
+
+    .footer {
+        margin: 100px 0;
+        padding: 0;
+        font-size: 0.8rem;
+    
+    
+    }
+
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    color: rgb(189, 189, 189);
+    padding-bottom:5px;
+    margin-top:auto;
+
+
+}
+
+.footer a {
+    color: rgb(189, 189, 189);
+
+}
